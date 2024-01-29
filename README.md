@@ -4,11 +4,11 @@ This is the resource file repo for the article on how to connect a machine Learn
 
 ### Check out the full article on _Medium_
 
-[MediumLink](https://medium.com/@m.aaemon98/a-guide-to-connect-machine-learning-model-backend-to-frontend-using-flask-1c9710f0be4b)
+[A Guide to Connect Machine Learning Model Backend to Frontend Using Flask](https://medium.com/@m.aaemon98/a-guide-to-connect-machine-learning-model-backend-to-frontend-using-flask-1c9710f0be4b)
 
 #### Check out the sample web app
 
-[WebAppLink](https://alfaecho.pythonanywhere.com/)
+[Car MPG Prediction using HP and WT](https://alfaecho.pythonanywhere.com/)
 
 
 
