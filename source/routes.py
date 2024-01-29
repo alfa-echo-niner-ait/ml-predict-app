@@ -1,24 +1,17 @@
-import os
-import joblib
+from source import app, model
 import pandas as pd
-from flask import Flask, render_template, request
-
-MODEL_NAME = "car_model.joblib"
-
-# Initialize the app
-app = Flask(__name__)
-
-# Load the model when the application starts
-model_path = os.path.join(os.path.dirname(__file__), 'static/model/' + MODEL_NAME)
-model = joblib.load(model_path)
+from flask import render_template, request
 
 # Define app routes
+
 # Index
 @app.route('/')
 def index():
     return render_template('index.html')
 
 # Process user input and return response data
+
+
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST' and model:
@@ -38,7 +31,3 @@ def predict():
         except ValueError:
             return "<i class='text-danger'>Please Enter Correct Data!</i>"
     return "Failed to load model!"
-
-# Run the app
-if __name__ == '__main__':
-    app.run(debug=True)
