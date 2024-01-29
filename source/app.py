@@ -18,7 +18,7 @@ model = joblib.load(model_path)
 def index():
     return render_template('index.html')
 
-# Process user input
+# Process user input and return response data
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST' and model:

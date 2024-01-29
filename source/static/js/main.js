@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Post data
+    // Send data to flask server upon submit
     $("#submitData").click(function () {
         $("#resText").show()
         $("#resText").html("Loading....");

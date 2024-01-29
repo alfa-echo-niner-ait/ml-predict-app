@@ -11,6 +11,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script>
+        // Get prediction path
         var predict_url = "{{ url_for('predict') }}"
     </script>
 </head>
@@ -23,8 +24,10 @@
     
         <div class="card p-3 mt-3">
             <div class="input-group mb-3 justify-content-center">
+                <!-- User Input -->
                 <input type="text" id="hp" class="form-control-lg" placeholder="Enter HP, e.g. 112" required>
                 <input type="text" id="wt" class="form-control-lg" placeholder="Enter WT, e.g. 3.2" required>
+                <!-- Process input/output via main.js file -->
                 <button class="btn btn-lg btn-info" type="button" id="submitData">Get MPG</button>
             </div>
             <p id="resText" class="text-center text-success fs-3" style="display: none;"></p>
