@@ -9,24 +9,26 @@ def index():
     return render_template('index.html')
 
 # Process user input and return response data
-
-
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST' and model:
-        # Store the form input data by user
+        # Receive & store the form input data by user
         hp = request.form.get('hp')
         wt = request.form.get('wt')
-        # Prepare received data for test data according to your model
+        
+        # Prepare received data for test data according to your trained model
+        # Note: Prepare your user input as per your trained model prediction data
         data = {
             "hp": [hp],
             "wt": [wt]
         }
         test_data = pd.DataFrame(data)
         try:
+            # Calculate the prediction result as per your trained model
             predict_mpg = model.predict(test_data)
             result = f"{predict_mpg[0]:.2f}"
             return f"Predicted : <strong>{result} MPG</strong>"
         except ValueError:
             return "<i class='text-danger'>Please Enter Correct Data!</i>"
+        
     return "Failed to load model!"
