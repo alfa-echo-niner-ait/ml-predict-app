@@ -4,11 +4,11 @@ This is the resource file repo for the article on how to connect a machine Learn
 
 ### Check out the full article on _Medium_
 
-[https://medium.com/@m.aaemon98/a-guide-to-connect-machine-learning-model-backend-to-frontend-using-flask-1c9710f0be4b](MediumLink)
+[MediumLink](https://medium.com/@m.aaemon98/a-guide-to-connect-machine-learning-model-backend-to-frontend-using-flask-1c9710f0be4b)
 
 #### Check out the sample web app
 
-[https://alfaecho.pythonanywhere.com/](Webapp)
+[WebAppLink](https://alfaecho.pythonanywhere.com/)
 
 
 
