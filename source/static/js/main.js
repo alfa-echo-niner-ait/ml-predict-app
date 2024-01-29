@@ -16,6 +16,7 @@ $(document).ready(function () {
                 hp: hp,
                 wt: wt
             },
+            // Print result
             success: function (response) {
                 $("#resText").html(response);
             }
