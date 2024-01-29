@@ -3,7 +3,6 @@ import pandas as pd
 from flask import render_template, request
 
 # Define app routes
-
 # Index
 @app.route('/')
 def index():

@@ -8,6 +8,7 @@ $(document).ready(function () {
         $("#hp").val("");
         $("#wt").val("");
 
+        // Data request
         $.ajax({
             type: "POST",
             url: predict_url,
