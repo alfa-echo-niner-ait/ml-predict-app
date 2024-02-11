@@ -2,7 +2,7 @@
 
 This is the resource file repo for the article on how to connect a machine Learning model backend to the frontend with Flask.
 
-### Check out the full article on _Medium_
+### Check out the full article on _DEV Community_
 
 [A Guide to Connect Machine Learning Model Backend to Frontend Using Flask](https://dev.to/alfaechoninerait/a-guide-to-connect-machine-learning-model-backend-to-frontend-using-flask-5geh)
 
